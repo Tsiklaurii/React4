@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ListItem = ({ index, text, Delete }) => {
+const ListItem = (props) => {
     return (
         <div className='item'>
-            <p>{index + 1}. {text}</p>
-            <button onClick={Delete}>Delete</button>
+            <p>{props.index + 1}. {props.todo}</p>
+            <button onClick={props.Delete}>Delete</button>
         </div>
     )
 }
