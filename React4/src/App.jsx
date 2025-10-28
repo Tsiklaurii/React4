@@ -1,8 +1,14 @@
 import React from 'react'
+import "./App.css"
+import TodoList from './components/TodoList'
+import Input from './components/Input'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Input />
+      <TodoList />
+    </div>
   )
 }
 
