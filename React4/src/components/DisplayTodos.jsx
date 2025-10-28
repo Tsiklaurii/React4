@@ -1,10 +1,10 @@
 import React from 'react'
 import ListItem from './ListItem'
 
-const DisplayTodos = ({ todos = [], Delete }) => {
+const DisplayTodos = (props) => {
     return (
         <div>
-            {todos.map((todo, index) => (<ListItem index={index} text={todo} Delete={() => Delete(index)} />))}
+            {props.todos.map((todo, index) => (<ListItem index={index} todo={todo} Delete={() => props.Delete(index)} />))}
         </div>
     )
 }
